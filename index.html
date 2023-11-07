@@ -10,16 +10,17 @@
     <header class="header">
         <nav class="navbar">
             <ul class="navbar-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">MY PORTFOLIO</a></li>
+                <li><a href="#start">HOME</a></li>
+                <li><a href="#my-portfolio">MY PORTFOLIO</a></li>
                 <li><img src="./images/thuwu-logo.png" width="152px" height="52px"></li>
-                <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <a id="start" name="start"></a>
         <div class="whole-page">
 
             <div class="section intro">
@@ -31,12 +32,13 @@
                     <div class="display this-is-thuwu">This Is Thuwu</div>
                     <div class="subtitle-2 intro-subtitle">I am a second-year student at PTIT, and I am passionate about design. I am disciplined and optimistic, and always eager to learn new things.</div>
                     <div class="button-bar">
-                        <button class="button button-primary">My Portfolio</button>
-                        <button class="button">Contact Me</button>
+                        <a href="#my-portfolio"><button class="button button-primary">My Portfolio</button></a>
+                        <a href="#contact"><button class="button">Contact Me</button></a>
                     </div>
                 </div>
             </div>
 
+            <a id="about-me" name="about-me"></a>
             <div class="section summary-section">
                 <div class="summary">
                     <div class="summary-row-1">
@@ -109,9 +111,10 @@
                 </div>
             </div>
 
+            <a id="my-portfolio" name="my-portfolio"></a>
             <div class="section my-portfolio-section">
                 <h1 class="my-portfolio">My Portfolio</h1>
-                <div class="subtitle-3 my-portfolio-brief">I'm a Ui/Ux designer that loves trying out all aspects of design.<br />It helps me work better with my future collaborators.</div>
+                <div class="subtitle-3 my-portfolio-brief">I&#39;m a Ui/Ux designer that loves trying out all aspects of design.<br />It helps me work better with my future collaborators.</div>
 
                 <div class="button-bar filter-button-bar">
                     <button class="button button-primary">All</button>
@@ -145,7 +148,7 @@
                         </div>
                         <div class="project-brief-wrapper">
                             <h3>36 Days Of Type</h3>
-                            <div class="content">This is the first time I've participated in this challenge, even though the official time has passed. I had fun working on it and I'm grad I tried, although I didn't complete it.</div>
+                            <div class="content">This is the first time I&#39;ve participated in this challenge, even though the official time has passed. I had fun working on it and I&#39;m grad I tried, although I didn&#39;t complete it.</div>
                         </div>
                     </div>
 
@@ -212,19 +215,104 @@
                 <h1 class="why-clients-choose-my-services">Why Clients Choose My Services</h1>
                 <div class="feedbacks-area">
                     <div class="feedback feedback-1">
-                        <div class="feedback-content-small">
-                            I was impressed with Thu's work on my website design. She was able to take my vision,
-                        </div>
-                        <div class="feedback-content-big">
-                            Creating a site that is both visually appealing and easy to navigate.
-                        </div>
-                        <div class="feedbacker">
-                            <div class="feedbacker-name">Mrs. Don Bosco</div>
-                            <div class="feedbacker-title">Lead Solutions Developer</div>
-                        </div>
                         <div class="feedbacker-avatar">
-                            <!-- Feedbacker image here ??? -->
+                            <img class="feedbacker-avatar-image" src="./images/clients/mrs-don-bosco.png">
                         </div>
+                        <div class="feedback-body">
+                            <div class="feedback-content-small">
+                                I was impressed with Thu&#39;s work on my website design. She was able to take my vision,
+                            </div>
+                            <div class="feedback-content-big">
+                                Creating a site that is both visually appealing and easy to navigate.
+                            </div>
+                            <div class="feedbacker-card">
+                                <div class="feedbacker-name">Mrs&#46; Don Bosco</div>
+                                <div class="feedbacker-title">Lead Solutions Developer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback feedback-2">
+                        <div class="feedbacker-avatar">
+                            <img class="feedbacker-avatar-image" src="./images/clients/drew-tillman.png">
+                        </div>
+                        <div class="feedback-body">
+                            <div class="feedback-content-small">
+                                I&#39;ve worked with Thu on several projects over the years, and I&#39;m always blown away by her creativity.
+                            </div>
+                            <div class="feedback-content-big">
+                                She can turn my ideas into stunning designs that exceed my expectations.
+                            </div>
+                            <div class="feedbacker-card">
+                                <div class="feedbacker-name">Abraham Moen</div>
+                                <div class="feedbacker-title">Central Marketing Planner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback feedback-3">
+                        <div class="feedbacker-avatar">
+                            <img class="feedbacker-avatar-image" src="./images/clients/mia-nguyen.png">
+                        </div>
+                        <div class="feedback-body">
+                            <div class="feedback-content-small">
+                                I was struggling to come up with a design for my company, but Thu was able to create a unique logo.
+                            </div>
+                            <div class="feedback-content-big">
+                                I&#39;ve received many compliments on it from my customers.
+                            </div>
+                            <div class="feedbacker-card">
+                                <div class="feedbacker-name">Mia Nguyen</div>
+                                <div class="feedbacker-title">CEO of Azure</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback feedback-4">
+                        <div class="feedbacker-avatar">
+                            <img class="feedbacker-avatar-image" src="./images/clients/drew-tillman.png">
+                        </div>
+                        <div class="feedback-body">
+                            <div class="feedback-content-small">
+                                Thu was able to perfectly capture my brand identity and create a key visual that is boh unique and cohesive.
+                            </div>
+                            <div class="feedback-content-big">
+                                Thu was also professional and easy to work with throughout the entire process.
+                            </div>
+                            <div class="feedbacker-card">
+                                <div class="feedbacker-name">Drew Tillman</div>
+                                <div class="feedbacker-title">Sales Associate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FEEDBACKS -->
+                </div>
+            </div>
+
+            <a id="contact" name="contact"></a>
+            <div class="section discuss-section">
+                <div class="discuss-wrapper">
+                    <div class="discuss-left">
+                        <h2>Have An Awesome Idea&#63;</h2>
+                        <h1>Let&#39;s Discuss</h1>
+                        <p class="subtitle-3">I&#39;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&#39;ll try my best to get back to you&#33;</p>
+                    </div>
+                    <div class="discuss-right">
+                        <form>
+                            <div class="field-wrapper">
+                                <input type="text" id="fullname-input" name="fullname" />
+                                <label for="fullname-input">Your Name</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="email" id="email-input" name="email" />
+                                <label for="email-input">Email</label>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="message" id="message-input" name="message" />
+                                <label for="message-input">Your Message</label>
+                            </div>
+                            <button class="button button-primary" type="submit">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>

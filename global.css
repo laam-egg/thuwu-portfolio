@@ -34,6 +34,11 @@ File này chứa CSS cho toàn bộ website.
     box-sizing: border-box;
 }
 
+/* https://stackoverflow.com/questions/62098093/scroll-behaviour-smooth-not-working-at-all#comment132591120_73546487 */
+html, body {
+    scroll-behavior: smooth !important;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -71,6 +76,7 @@ header {
 
 .navbar-links a {
     text-decoration: none;
+    color: var(--purple-400);
 }
 
 .section {
@@ -140,7 +146,7 @@ h3 {
     text-transform: capitalize;
 }
 
-.subtitle-1, .timeline-entry-brief {
+.subtitle-1, .timeline-entry-brief, input {
     color: var(--purple-300);
     font-family: Inter;
     font-size: 24px;
@@ -149,7 +155,7 @@ h3 {
     line-height: 150%;
 }
 
-.subtitle-2 {
+.subtitle-2, label {
     color: var(--purple-300);
     font-family: Inter;
     font-size: 20px;
@@ -188,10 +194,19 @@ h3 {
     line-height: 150%;
 }
 
-.subcontent-2, .timeline-entry-body {
+.subcontent-2, .timeline-entry-body, .feedback-content-small {
     color: var(--purple-300);
     font-family: Inter;
     font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.subcontent-3, .feedbacker-title {
+    color: var(--purple-250);
+    font-family: Inter;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -249,4 +264,36 @@ h3 {
 .button-primary:hover, .button-primary:active {
     background-color: var(--pink-300);
     color: var(--purple-600);
+}
+
+.field-wrapper {
+    position: relative;
+}
+
+input {
+    border: 0;
+    border-bottom: 2px solid var(--purple-300);
+    outline: none;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    cursor: text;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus + label,
+input:valid + label {
+    font-size: 16px;
+    top: -26px;
+    pointer-events: none;
+}
+
+input:focus,
+input:valid {
+    border-bottom: 2px solid var(--purple-300);
 }
