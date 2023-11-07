@@ -1,0 +1,252 @@
+/*
+File này chứa CSS cho toàn bộ website.
+ */
+
+:root {
+    --pink-0: #FFF9FB;
+    --pink-100-main-palette: #FAE6EE;
+    --pink-200-main-palette: #F3A0C5;
+    --pink-300: #FF7FB9;
+    --purple-100: #F2EFF4;
+    --purple-200: #D1BAE7;
+    --purple-250: #C7AAE3;
+    --purple-300: #A583C0;
+    --purple-400: #8241A1;
+    --purple-500-main-palette: #5E2B82;
+    --purple-600: #3F0956;
+    --yellow-main-palette-100-bg: #FDF8EF;
+    --d9d9d9: #D9D9D9;
+    line-height: 130%;
+}
+
+@font-face {
+    font-family: AristaLight;
+    src: url('./fonts/Arista2.0-light.ttf');
+}
+@font-face {
+    font-family: Arista;
+    src: url('./fonts/Arista2.0.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow-main-palette-100-bg);
+}
+
+.navbar-links {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-links li {
+    list-style-type: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Inter';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.navbar-links a {
+    text-decoration: none;
+}
+
+.section {
+    max-width: 100%;
+    padding-left: 6.7%;
+    padding-right: 6.7%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: var(--yellow-main-palette-100-bg);
+}
+
+.whole-page {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-links > li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .section {
+        padding: 5%;
+    }
+}
+
+.display {
+    color: var(--purple-400);
+    font-family: Arista;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+h1 {
+    color: var(--purple-500-main-palette);
+    text-align: center;
+    font-family: Arista;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: capitalize;
+
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: var(--purple-300);
+    font-family: Arista;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+h3 {
+    color: var(--purple-300);
+    font-family: AristaLight;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+.subtitle-1, .timeline-entry-brief {
+    color: var(--purple-300);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.subtitle-2 {
+    color: var(--purple-300);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.subtitle-3 {
+    color: var(--purple-300);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+.content {
+    color: var(--purple-250);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.subcontent-1, .timeline-entry-time {
+    color: var(--purple-300);
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.subcontent-2, .timeline-entry-body {
+    color: var(--purple-300);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.button-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    display: inline-flex;
+    height: 60px;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: transparent;
+
+    border-radius: 40px;
+    border: 2px solid var(--pink-200-main-palette);
+
+    color: var(--purple-300);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: capitalize;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    transition: all 0.5s;
+}
+
+.button:hover {
+    border-color: var(--pink-300);
+    background-color: var(--pink-100-main-palette);
+    color: var(--purple-400);
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: var(--pink-200-main-palette);
+    color: var(--purple-600);
+}
+
+.button-primary {
+    background: var(--pink-200-main-palette);
+
+    color: var(--purple-600);
+}
+
+.button-primary:hover, .button-primary:active {
+    background-color: var(--pink-300);
+    color: var(--purple-600);
+}

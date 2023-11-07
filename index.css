@@ -1,0 +1,225 @@
+@import url('./global.css');
+
+.intro {
+    display: grid;
+    grid-template-columns: 7fr 0.5fr 5fr;
+    grid-template-rows: 1;
+}
+
+.intro-left {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.group-50 {
+    max-width: 100%;
+}
+
+.intro-right {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hi-there {
+    transform: translateY(12px);
+}
+
+.intro-subtitle {
+    text-align: justify;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.summary-row-1 {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    grid-gap: 36px;
+}
+
+.summary-row-2 {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-gap: 36px;
+    align-items: start;
+}
+
+.summary-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.summary-box {
+    border-radius: 60px;
+    background: var(--pink-0);
+    padding: 30px 45px;
+}
+
+.timeline {
+    padding-left: 40px; /* change this in the future! */
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: end;
+    grid-gap: 0;
+    max-width: fit-content;
+}
+
+.timeline-entry {
+    display: contents;
+}
+
+.timeline-entry-brief, .timeline-entry-body {
+    padding-left: 40px;
+}
+
+.timeline-entry-time, .timeline-entry-brief {
+    /* horizontal line here */
+    padding-top: 40px;
+    border-bottom: 1px solid var(--purple-300);
+}
+
+.timeline-entry-time {
+    grid-column: 1;
+    padding-bottom: 3px;
+}
+
+.timeline-entry-brief, .timeline-entry-body {
+    grid-column: 2;
+}
+
+.summary-soft-skills {
+    background: var(--purple-100);
+}
+
+.summary-software-skills {
+    background: var(--pink-100-main-palette);
+}
+
+.summary-heading {
+    color: var(--purple-400);
+}
+
+.icon-bar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-portfolio-section {
+    background-color: var(--pink-0);
+}
+
+.my-portfolio-brief {
+    text-align: center;
+}
+
+.filter-button-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 60px;
+}
+
+.projects-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 36px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+.project-image-wrapper {
+    grid-row: 1;
+    grid-column: 1;
+    position: relative;
+    left: 0;
+    top: 0;
+    aspect-ratio: 248/147;
+}
+
+.project-image {
+    max-width: 100%;
+    width: 100%;
+    z-index: 0;
+    border-radius: 30px;
+    transition: all 0.5s;
+    aspect-ratio: 248/147;
+}
+
+.project-link-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border: 2px solid var(--pink-0);
+    background: transparent;
+    color: var(--pink-0);
+    text-transform: none;
+    padding: 10px 25px;
+    font-size: 15px;
+    opacity: 0;
+    height: auto;
+}
+
+.project-link-button:hover {
+    background: var(--pink-0);
+    color: var(--purple-250);
+    opacity: 1;
+}
+
+.project-image-filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 248/147;
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(20, 3, 28, 0.85) 19.23%, rgba(32, 9, 43, 0.00) 188.44%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* https://stackoverflow.com/a/10483891/13680015 */
+.project-image-wrapper:hover *, .project-link-button:hover ~ .project-image-filter {
+    opacity: 1;
+}
+
+.project-brief-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.feedbacks-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 36px;
+}
+
+.feedback {
+    border-radius: 176.5px;
+    background: var(--purple-100);
+    max-width: 100%;
+    display: grid;
+
+}
